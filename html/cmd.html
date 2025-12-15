@@ -1,43 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
    <head>
-      <title>Portal for QA</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Командная строка Windows — Portal for QA</title>
       <link rel="stylesheet" type="text/css" href="../css/style.css">
       <link rel="stylesheet" type="text/css" href="../css/font-awesome.css">
       <link rel="shortcut icon" href="../img/fav.ico" type="image/x-icon">
       <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
    </head>
    <body>
       <!--Card-->
       <div class="card animated fadeIn">
-         <!-- Ссылка на главную страницу -->
-         <a href="index.html">На главную</a>
          <p class="subtitle">Командная строка Windows</p>
          <h3 id="rt-0">Управление файлами и папками</h3>
          <ul>
-            <li>COPY – Копирование файлов в другое место</li>
-            <li>DIR – Отображение содержимого каталога</li>
-            <li>CD – Переход в другой каталог</li>
-            <li>MKDIR – Создание новой папки</li>
-            <li>MOVE – Перемещение файлов из одной папки в другую</li>
+            <li><code>COPY</code> – копирование файлов в другое место (пример: <code>COPY file.txt D:\backup\</code>).</li>
+            <li><code>DIR</code> – отображение списка файлов и папок в текущем каталоге.</li>
+            <li><code>CD</code> – смена текущего каталога (пример: <code>CD \folder\subfolder</code>).</li>
+            <li><code>MKDIR</code> (или <code>MD</code>) – создать папку (пример: <code>MKDIR new_folder</code>).</li>
+            <li><code>MOVE</code> – переместить или переименовать файлы/папки (пример: <code>MOVE file.txt D:\docs\</code>).</li>
          </ul>
          <h3 id="rt-1">Приложения и процессы</h3>
          <ul>
-            <li>TASKLIST – Список выполняемых задач</li>
-            <li>TASKKILL – Остановка или завершение процесса (например, по PID или имени)</li>
+            <li><code>TASKLIST</code> – показать список запущенных процессов.</li>
+            <li><code>TASKKILL /PID &lt;PID&gt; /F</code> – принудительно завершить процесс по его PID (PID можно узнать из <code>TASKLIST</code>).</li>
          </ul>
          <h3 id="rt-3">Системная информация</h3>
          <ul>
-            <li>DATE – Выводит или устанавливает системное время</li>
-            <li>TIME – Выводит или устанавливает текущую дату</li>
-            <li>HOSTNAME – Отображает имя компьютера</li>
-            <li>SYSTEMINFO – Отображает информацию о конфигурации компьютера</li>
-            <li>VER – Просмотр версии Windows</li>
+            <li><code>DATE</code> – выводит или устанавливает текущую дату.</li>
+            <li><code>TIME</code> – выводит или устанавливает текущее системное время.</li>
+            <li><code>HOSTNAME</code> – отображает имя компьютера.</li>
+            <li><code>SYSTEMINFO</code> – отображает информацию о конфигурации компьютера.</li>
+            <li><code>VER</code> – показывает версию Windows.</li>
          </ul>
       </div>
-       <footer class="animated fadeIn">
-         &copy; 2024. SkyPro
-         </body>
+      <!--footer-->
+      <footer class="animated fadeIn">
+         <p class="location" align="center">
+            <a href="../index.html">Главная</a>
+         </p>
+         &copy; 2024 SkyPro
+      </footer>
+   </body>
 </html>
